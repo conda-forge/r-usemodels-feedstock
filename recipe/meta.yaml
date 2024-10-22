@@ -1,6 +1,5 @@
 {% set version = '0.2.0' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-usemodels
@@ -13,8 +12,7 @@ source:
   sha256: 510ff71bbe7209bc5723c3e0ef090ef8617d3ca853c3db9818452edbc82687b5
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
